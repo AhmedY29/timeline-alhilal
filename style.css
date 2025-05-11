@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Tajawal", sans-serif;
+    background-color: #f4f6f9;
+}
+
+.hero-section{
+    border-radius: 10px;
+    height: calc(100vh - 100px);
+    background-color: #0028f0;
+}
+
+.hero-img-mask{
+    flex: 1;
+}
+
+.hero-img-mask .mask-img{
+    transform: rotate(180deg);
+    width: 100vw;
+}
+
+.primary-text{
+    color: #005bac;
+}
+label{
+    color: #005bac;
+    margin-bottom: 0.5em;
+}
+
+.card-time{
+    width: 100% !important;
+}
+.card-time:nth-child(odd){
+    display: flex;
+    justify-content: end !important;
+}
+
+.card-time:nth-child(odd) .card-info{
+    background: linear-gradient(to right, #005bac, #1e4590);
+    border-radius: 15px;
+    border-top-right-radius: 0;
+}
+.card-time:nth-child(odd) .year h1{
+    background: #1e4590;
+    width: max-content;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-time:nth-child(even) .year{
+    direction: ltr;
+}
+.card-time:nth-child(even) .card-info{
+    background: linear-gradient(to right, #005bac, #1e4590);
+    border-radius: 15px;
+    border-top-left-radius: 0;
+}
+
+
+
+.card-time:nth-child(even) .year h1{
+    background: #005bac !important;
+    width: max-content !important;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+}
+
+.dialog{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+}
+.dialog-content{
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    overflow: auto;
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 765px) { 
+    .card-time:nth-child(even) .timeline-card {
+        width: 100% !important;
+    }
+    .hero-text{
+        width: 100% !important;
+    }
+ }
+@media (max-width: 992px) { 
+
+    .hero-text{
+        width: 100% !important;
+    }
+ }
