@@ -346,8 +346,9 @@ function storeTimeline() {
 }
 
 function getTimelineFromStore() {
+  storeTimeline();
   let timelinePosts = JSON.parse(localStorage.getItem("timeline-posts"));
-  timeline = timelinePosts ?? timeline;
+  timeline = timelinePosts ?? [];
 }
 getTimelineFromStore();
 
